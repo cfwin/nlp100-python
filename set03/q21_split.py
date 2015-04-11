@@ -1,6 +1,10 @@
 #! /usr/bin/python
 # -*- coding: utf-8 -*-
 
+"""
+USAGE: cat medline.txt | python q21_split.py
+"""
+
 import sys
 
 def split_by_period():
