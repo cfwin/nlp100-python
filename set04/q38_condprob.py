@@ -5,8 +5,17 @@
 USAGE: cat medline.txt.sent.tok | python q36_bigram.py | python q38_condprob.py
 """
 
+import kyotocabinet
 import sys
 from collections import defaultdict
+
+
+def read_db(DB):
+    """Load the kyotocabinet type database DB"""
+    db = kyotocabinet.DB()
+    if not db.open(DB, kyotocabinet.DB.OWRITER | kyotocabinet.DB.OCREATE):
+        sys.stderr.write('ERROR: failed to open: %s\n' % db.error())
+    return db
 
 def conditional_probability():
 	D = defaultdict(lambda : defaultdict(int))
