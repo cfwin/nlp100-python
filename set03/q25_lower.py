@@ -9,4 +9,7 @@ import sys
 
 for line in sys.stdin:
 	token = line.strip('\n')
-	print token + '\t' + token.lower()
+	if token:
+		print token + '\t' + token.lower()
+	else:
+		print
