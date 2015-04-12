@@ -107,7 +107,7 @@ class PorterStemmer():
     def set_to(self, s):
         """set_to(s) sets (j+1),...,k to the characters in the string s"""
         length = len(s)
-        self.b = self.b[:self.j+1] + s + self.b[self.j+length+1]
+        self.b = self.b[:self.j+1] + s + self.b[self.j+length+1:]
         self.k = self.j + length
 
     def r(self, s):
