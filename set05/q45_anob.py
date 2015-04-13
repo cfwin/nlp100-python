@@ -24,7 +24,7 @@ def extract_a_no_b():
 				print '%(surface)s\t%(base)s\t%(pos)s\t%(pos1)s' % S[i]
 				print '%(surface)s\t%(base)s\t%(pos)s\t%(pos1)s' % S[i+1]
 				print '%(surface)s\t%(base)s\t%(pos)s\t%(pos1)s' % S[i+2]
-				print	
+				print
 
 if __name__ == '__main__':
 	extract_a_no_b()
