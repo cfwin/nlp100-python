@@ -1,0 +1,1 @@
+#cabocha -f1 japanese.txt
