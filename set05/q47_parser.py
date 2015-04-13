@@ -11,6 +11,7 @@ OPTION:
 ・半角イコール区切りで内容を指定（surface, pos, pos1, base）
 
 TODO:
+ドキュメントの追加
 各項目に対して複数の条件 (e.g. pos=名詞|pos1=サ変接続)
 ngramを自動で判定 (if文をqの長さで自動生成)
 """
