@@ -6,7 +6,7 @@ improved version of q55_dependency.py
 USAGE: cat japanese.txt.cabocha | python q56_noun2verb.py
 """
 
-from q53_chunk import *
+from chunkreader import *
 
 def unpunctuate(chunk):
 	morph = chunk.morphs[-1]

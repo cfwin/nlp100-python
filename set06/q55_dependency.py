@@ -5,7 +5,7 @@
 USAGE: cat japanese.txt.cabocha | python q55_dependency.py
 """
 
-from q53_chunk import *
+from chunkreader import *
 
 def unpunctuate(chunk):
 	morph = chunk.morphs[-1]
