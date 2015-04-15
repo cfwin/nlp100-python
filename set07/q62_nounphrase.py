@@ -4,17 +4,16 @@
 from chunkreader import *
 
 def noun_phrase():
-	np = ''
-	nplist = []
 	for S in reader():
 		for chunk in S:
+			np = ''
 			for morph in chunk.morphs:
 				if morph.pos == '名詞':
 					np += morph.surface
 				else:
 					if np:
 						print np
-						np = ''
+					np = ''
 			if np:
 				print np
 
