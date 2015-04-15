@@ -35,9 +35,9 @@ class Chunk:
 								self.dst,
 								','.join([str(src) for src in self.srcs]))
 
-def reader():
+def reader(src=sys.stdin):
 	S = []
-	for line in sys.stdin:
+	for line in src:
 		if line.startswith('*'):
 			S.append(Chunk(line)) #new chunk
 		elif line.startswith('EOS'):
