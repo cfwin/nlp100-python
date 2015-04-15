@@ -27,7 +27,6 @@ def context():
 	top100 = [line.strip('\n').split('\t')[1] for line in open('tfidf100.lst')]
 	srcs = 'chapter7cabocha/'
 	for src in os.listdir(srcs):
-		print src
 		for S in reader(open(srcs + src)):
 			for chunk in S:
 				nplist = noun_phrase(chunk)
