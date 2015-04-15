@@ -35,7 +35,7 @@ def tfidf(srcs):
 	#calculate tf*idf = freq(w) * log(N / df(w))
 	#tf*idf reflects how important a term is to a document in a corpus
 	for term, tf in tf.iteritems():
-		tfidf = 1.0 * tf * math.log(N / df[term])
+		tfidf = tf * math.log(N / float(df[term]))
 		print '%s\t%f\t%d\t%d' % (term, tfidf, tf, df[term])
 
 if __name__ == '__main__':
